@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+        <title>Quick tip</title>
+  
+       <link rel="stylesheet" href="TipCalculator.css"/>
+        
+    </head>
+    <body>
+        <main id="container">
+            <h1>Tip calculator</h1>
+            <h3>Developed by Mukumbuta</h3>
+        <section>
+            <div class="bill">
+   <label for="yourBill">Bill</label>
+   <input type="number" placeholder="your bill" id="yourBill" />
+       </div>
+       
+       <div>
+       <div class="space-between">
+  <span for="">Select Tip</span>  
+  <span id="tipPercent">0%</span>  
+       </div>
+   <input type="range" value="0" id="tipInput" class="range"/>
+       </div> 
+       <div class="space-between">
+       <span>Tip</span>
+       <span id="tipValue">$0</span>
+       </div>
+   <hr>
+       <div class="space-between total">
+     <span>Total</span>
+     <span id="billWithTip"></span>
+           </div>
+   </section>
+   <section>
+       <div class="space-between">
+           <span>Split</span>
+           <span id="splitValue"></span>
+       </div>
+       <div>
+           <input type="range" min="1" max="10" value="1" id="splitInput" class="range" />
+       </div>
+       <div  class="space-between">
+       <label for="" >Bill each</label>
+       <span id="billEach">$0</span>
+       </div>
+    <div class="space-between">
+       <span>Tip each</span>
+       <span id="tipEach">$0</span>
+    </div>
+    </section>     
+   </main>
+   <script type = "text/javascript" src = "TipCalculator.js"></script>
+    </body>
+</html>
+        
